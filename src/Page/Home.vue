@@ -1,17 +1,13 @@
 <script setup>
-
+    import HeadVue from '../Component/Head.vue';
 </script>
 <template>
-    <div>
-        <el-tooltip
-        class="box-item"
-        effect="dark"
-        content="Right Bottom prompts info"
-        placement="right-end"
-      >
-        <el-button>right-end</el-button>
-      </el-tooltip>
-        <div class="text-blue-400 text-400">Hello <i class="fas fa-facebook.com fa-2x"></i></div>
-        <p class="text-gray-800 text-[32px]">hedlfdfldfkdl</p>
+    <div class="">
+        <div class="">
+            <head-vue></head-vue>
+        </div>
     </div>
 </template>
+<style scoped>
+
+</style>
