@@ -1,0 +1,50 @@
+
+
+[
+    {
+        "os":[
+            {"value":"LINUX","image":"","icon":"../../svg/linux.svg"},
+            {"value":"WINDOWS","image":"","icon":"../../svg/windows.svg"}
+        ]
+    },
+    {
+        "langage":[
+            {"value":"HTML","note":"95","icon":"../../svg/html.svg"},
+            {"value":"CSS","note":"95","icon":"../../svg/css.svg"},
+            {"value":"JAVASCRIPT","note":"86","icon":"../../svg/javascript.svg"},
+            {"value":"SASS","note":"60","icon":"../../svg/sass.svg"},
+            {"value":"PHP","note":"95","icon":"../../svg/php3.svg"},
+            {"value":"SQL","note":"95","icon":"../../svg/sql.svg"},
+            {"value":"PYTON","note":"45","icon":"../../svg/python.svg"}
+            ]
+    },
+    {
+        "librairy":[
+            {"value":"LARAVEL","icon":"../../svg/laravel.svg","image":""},
+            {"value":"VUE JS","icon":"../../svg/vue.svg","image":""},
+            {"value":"REACT JS","icon":"../../svg/react.svg","image":""},
+            {"value":"NODE JS","icon":"../../svg/nodejs.svg","image":""},
+            {"value":"VITE","icon":"../../svg/vitejs.svg","image":""},
+            {"value":"JQUERY","icon":"../../svg/jquery-svgrepo-com.svg","image":""},
+            {"value":"VUETIFY","icon":"../../svg/vuetifyjs.svg","image":""},
+            {"value":"TAILWINDCSS","icon":"../../svg/tailwindcss1.svg","image":""},
+            {"value":"ALPINE JS","icon":"../../svg/alpinejs.svg","image":""},
+            {"value":"CKEDITOR","icon":"","image":""},
+            {"value":"BOOTSTRAP","icon":"../../svg/bootstrap.svg","image":""},
+            {"value":"ELEMENT UI","icon":"","image":""},
+            {"value":"WORDPRESS","icon":"../../svg/wordpress.svg","image":""},
+            {"value":"SMARTEND CMS","icon":"","image":""}
+        ]
+    },
+    {
+        "outil":[
+            {"value":"VS CODE","icon":"../../svg/vscode.svg"},
+            {"value":"GIT","icon":"../../svg/git1.svg"},
+            {"value":"DOCKER","icon":"../../svg/docker.svg"},
+            {"value":"FIGMA","icon":"../../svg/figma.svg"},
+            {"value":"AI","icon":"../../svg/bing.svg"},
+            {"value":"Stack overflow","icon":"../../svg/stackoverflow.svg"}
+        ]
+    }
+
+]

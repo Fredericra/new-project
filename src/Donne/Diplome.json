@@ -1,0 +1,33 @@
+[
+    {
+        "diplome": "BAC +3",
+        "value": "INFORMATIQUE",
+        "ecole": "UNIVERS INFORMATIQUE",
+        "lieu": "Antananarivo, Madagasikara",
+        "date":"2019-2022",
+        "link":"https://www.facebook.com/profile.php?id=100082991029410"
+    },
+    {
+        "diplome": "TECHNICIEN SUPERIEUR INFORMATIQUE DE GESTION",
+        "value": "",
+        "ecole": "UNIVERS INFORMATIQUE",
+        "lieu": "Antananarivo, Madagasikara",
+        "date":"2022",
+        "link":"https://www.facebook.com/profile.php?id=100082991029410"
+    },
+    {
+        "diplome": "MANAGEMENT ET MARKETING",
+        "value": "",
+        "ecole": "UNIVERS INFORMATIQUE",
+        "lieu": "Antananarivo, Madagasikara",
+        "date":"juin 2022",
+        "link":"https://www.facebook.com/profile.php?id=100082991029410"
+    },
+    {
+        "diplome": "BACCALAUREAT",
+        "value": "",
+        "ecole": "LMA (Lycée Moderne Ampefiloha)",
+        "lieu": "Antanananrivo, Madagascar",
+        "date":"2017"
+    }
+]

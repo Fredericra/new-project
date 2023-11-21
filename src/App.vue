@@ -3,9 +3,11 @@ import { ref,onMounted,onUnmounted } from "vue"
 import { RouterLink, RouterView } from 'vue-router'
 
 const loadHeigh = ref(window.innerHeight);
+const timeLoad = ref(0);
 const pageScale = ref(0);
 function pageStart(){
   let timePerfomance = performance.now();
+  timeLoad.value = timePerfomance + 2000;
   setTimeout(() => {
     loadHeigh.value = 0;
     pageScale.value = window.innerHeight
@@ -28,8 +30,8 @@ onMounted(() => {
                 </div>
           </div>
       </div>
-      <div class="duration-1000 bg-gradient-to-b to-indigo-600 from-purple-600 bg-opacity-10" v-if="loadHeigh===0" :style="{opacity:`${pageScale}`}">
-        <router-view></router-view>
+      <div class="duration-1000 bg-gradient-to-b to-indigo-600 from-purple-200" v-if="loadHeigh===0" :style="{opacity:`${pageScale}`}">
+        <router-view :time="timeLoad"></router-view>
       </div>
      
   </div>

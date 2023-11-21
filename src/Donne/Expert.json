@@ -1,0 +1,78 @@
+[
+  {
+    "titre": "Développeur Laravel & Vue js",
+    "type": "Téletravail",
+    "societe": "Nos Corporation | France",
+    "link": "",
+    "link1":"",
+    "presentation": "A present, développeur Laravel et Vue js Chez Nos corporation, j'ai démontré une expertise technique solide dans création et la maintenance d'application web modernes.J'ai une compréhension approfondie des meilleures pratiques de codage. ",
+    "value": [
+      "Ma mission est de concevoir, développer et maintenir des application web robustes et monderne.",
+      "J'utilise mon expertise technique pour résoudre des problémes complexes, tout en respectant les meilleurs pratiques de codage.",
+      "Je collabore étroitement avec les équipes interfonctionnelles pour livrer des solutions de haute qualité dans les délais impartis.",
+      "Toujours à la recherche d'opportunités pour développer mes compétences, je suis passionné par l'innovation techonologique et déterminé a apporter une valeur ajoutée à mon équipe"
+    ],
+    "image": ["../../icon/laravel.svg", "../../icon/vue1.svg"],
+    "icon": []
+  },
+  {
+    "titre": "PHP | Laravel | Vue js",
+    "type": "Freelance",
+    "societe": "",
+    "link": "",
+    "link1":"",
+    "presentation": "J'ai aidé de nombreux clients établir une présence en ligne impréssionnante grâce à des portfolios personnalisés et des sites e-commerce conviviaux.",
+    "value": [
+      "Mon objectif est de créer des solutions qui répondent aux besoins spécifiques de chaque client.",
+      "Je suis compétent dans l'utilisation de diverses techonologies et langagaes de programmation ,y compris PHP, HTML, CSS, Javascript et Mysql avec téchonogie Framwork Vue js et Laravel"
+    ],
+    "image": ["../../icon/laravel.svg", "../../icon/vue1.svg"],
+    "icon": []
+  },
+  {
+    "titre": "Stage en PHP",
+    "type": "Stagiaire",
+    "societe": "UNIVERS INFOS",
+    "link": "",
+    "link1":"https://www.facebook.com/profile.php?id=100082991029410",
+    "presentation": "Au cours de ce stage dans cet instutie, j'ai eu l'opportunité d'acquérir une expérience pratique en PHP, un langage de scrip côte serveur.",
+    "value": [
+      "Je suis passionné par la résolution de problème et j'aime le défi que représente la crétion de solutions efficaces et innovantes pour diverses exigences de projet."
+    ],
+    "image": ["../../icon/php3.svg", "../../icon/php2.svg"],
+    "icon": []
+  },
+  {
+    "titre": "Projet Personnele",
+    "type": "VUE JS ",
+    "societe": "DIARY | AI",
+    "link": "https://aide-game-ai-response.netlify.app/",
+    "link1":"https://aide-game-ai-response.netlify.app",
+    "presentation": "Ce projet vise à développer un jeu interactif unique qui intègre des fonctionnalités d’horoscope et de questions-réponses, le tout construit en utilisant le framework JavaScript Vue.js.",
+    "value": [
+      "Le site sera conçu pour offrir aux utilisatuers une expérience luqique tout en leur fournissant des informations d'horoscope quotidinnes.",
+      "Les utilisateurs pourront également poser des questions auxquelles le sytème répondra, ajoutant ainsi une dimmesion interactive au jeu.",
+      "L'objectif principal de ce projet est de créer une application qui est non seulement divertissante, mais aussi informative.",
+      "En intégrant les horoscopes, citations, question-réponses et des jeux conaissace génerale."
+    ],
+    "image": ["../../icon/vue.svg", "../../icon/vitejs.svg"],
+    "icon": []
+  },
+  {
+    "titre": "Projet Personnele",
+    "type": "LARAVEL | INERTIA",
+    "societe": "Gestion scolaire",
+    "link": "https://github.com/Fredericra/inertia-scolaire-gestion",
+    "link1":"https://github.com/Fredericra/inertia-scolaire-gestion",
+    "presentation": "Ce projet vise à developper un système de gestion scolaire complet et robuste en utilisant le framework Laravel et la bibliothèque Javascript Inertia.",
+    "value": [
+      "Le système sera conçu pour faciliter la gestion des information scolaires, y compris les détails des étudiants, inscription, horaires."
+    ],
+    "image": [
+      "../../icon/laravel.svg",
+      "../../icon/vue1.svg",
+      "../../icon/vitejs.svg"
+    ],
+    "icon": []
+  }
+]
