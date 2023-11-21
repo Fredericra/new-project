@@ -15,7 +15,7 @@ import Projet from "../Donne/Projet.json"
         <div class="" v-for="(value, index) in Projet" :key="index">
             <a :href="value.link" class=" overflow-hidden">
                 <div class="">
-                    <el-carousel-item class=" rounded-2xl shadow-lg">
+                    <el-carousel-item class=" rounded-2xl shadow-lg" style="object-fit:cover ;background-size: 20%;" :style="`background: url(${value.image});`">
                         <div class="relative">
                             <div class="absolute top-4 left-2">
                                 <div class="text-indigo-950">
@@ -24,7 +24,6 @@ import Projet from "../Donne/Projet.json"
                                     </p>
                                 </div>
                             </div>
-                            <img :src="value.image" class=" object-center" alt="">
                         </div>
                     </el-carousel-item>
                 </div>
@@ -41,7 +40,11 @@ import Projet from "../Donne/Projet.json"
     margin: 0;
     text-align: center;
 }
-
+.el-carousel__item:nth-child(n){
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: 120px;
+}
 .el-carousel__item:nth-child(2n) {
     background-color: #99a9bf;
 }
