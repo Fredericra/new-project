@@ -3,7 +3,7 @@ import { onMounted, ref } from "vue";
 import TextVue from "./Text.vue";
 const value = defineProps(['value']);
 const menu = ref([
-    { value: "Antananarivo,Madagascar", icon: "fas fa-map", title: "Adress" },
+    { value: "Antananarivo,Madagascar", icon: "fas fa-location-arrow", title: "Adress" },
     { value: "Malagasy", icon: "fas fa-address-card", title: "Nationalite" },
     { value: "+261 32 22 303 69", icon: "fas fa-map-marker-alt", title: "Telephone" },
     { value: "25 ans", icon: "fas fa-hand-holding-heart", title: "age" },

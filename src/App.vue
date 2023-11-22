@@ -26,7 +26,7 @@ onMounted(() => {
       <div class="loader h-screen duration-1000" :style="{height:`${loadHeigh}px`,opacity:loadHeigh}">
           <div class="flex h-screen justify-center items-center">
                 <div class="flex space-x-2">
-                    <div class="bg-indigo-950 anime" v-for="i in 25" :style="`--i:${i+1}`" :key="i"></div>
+                    <div class="bg-orange-600 anime" v-for="i in 25" :style="`--i:${i+1}`" :key="i"></div>
                 </div>
           </div>
       </div>
@@ -49,8 +49,7 @@ onMounted(() => {
   height: 100%;
   right:0;
   top:0;
-  opacity: 0.2;
-  background: var(--pink-950); 
+  background: var(--blue-400); 
   clip-path: circle(20% at right 80%);
 
 }
@@ -60,7 +59,6 @@ onMounted(() => {
   position: absolute;
   width: 100%;
   height: 100%;
-  opacity:0.6;
   background: var(--pink-950); 
   clip-path: circle(40% at left 35%);
 

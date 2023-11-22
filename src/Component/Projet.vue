@@ -38,9 +38,8 @@ const ProjetList = ref(
         <div class="" v-for="(value, index) in ProjetList" :key="index">
                 <div class="">
                     <el-carousel-item class=" rounded-2xl shadow-lg">
-                        <div class="common-layout">
-                            <el-container>
-                                <el-aside width="400px">
+                        <div class="media">
+                            <div class="col-span-8">
                                 <div class="px-2 py-4">
                                     <div class="text-cener">
                                         <p class="">
@@ -57,17 +56,17 @@ const ProjetList = ref(
                                     </div>
                                     <div class="flex justify-center items-end py-4">
                                         <div class="flex space-x-2">
-                                            <a href="" class="btn">Source Code</a>
+                                            <a :href="value.source" class="btn">Source Code</a>
                                             <a :href="value.link" class="btn1">Demo</a>
                                         </div>
                                     </div>
                                 </div>
-                                </el-aside>
-                                <el-main>
-                                    <img :src="value.image" alt="" class="h-[220px] w-[320px] rounded-t-2xl shadow-lg shadow-indigo-900 object-cover">
-                                </el-main>
-                            </el-container>
+                            </div>
+                            <div class="col-span-4 p-5">
+                                <img :src="value.image" alt="" class="h-[220px] w-[320px] rounded-t-2xl shadow-lg shadow-indigo-900 object-cover">
+                            </div>
                         </div>
+
                     </el-carousel-item>
                 </div>
         </div>
@@ -82,16 +81,12 @@ const ProjetList = ref(
     margin: 0;
     text-align: center;
 }
-.el-carousel__item:nth-child(n){
-    object-fit: cover;
-    background-repeat: no-repeat;
-    background-size: 120px;
-}
+
 .el-carousel__item:nth-child(2n) {
-    background-color: #99a9bf;
+    background: #20a10f;
 }
 
-.el-carousel__item:nth-child(2n + 1) {
-    background-color: #d3dce6;
+.el-carousel__item:nth-child(2n + 1 ) {
+    background: #798a9e;
 }
 </style>
