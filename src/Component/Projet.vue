@@ -58,13 +58,13 @@ const ProjetList = ref(
                                     <div class="flex justify-center items-end py-4">
                                         <div class="flex space-x-2">
                                             <a href="" class="btn">Source Code</a>
-                                            <a href="" class="btn1">Demo</a>
+                                            <a :href="value.link" class="btn1">Demo</a>
                                         </div>
                                     </div>
                                 </div>
                                 </el-aside>
                                 <el-main>
-                                    <el-image :src="value.image" :fit="cover" width="100%" height="100%" class="h-[220px] w-[220px] shadow-lg shadow-indigo-900 rounded-tl-[20px]"></el-image>
+                                    <img :src="value.image" alt="" class="h-[220px] w-[320px] rounded-t-2xl shadow-lg shadow-indigo-900 object-cover">
                                 </el-main>
                             </el-container>
                         </div>
