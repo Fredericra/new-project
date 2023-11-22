@@ -3,6 +3,9 @@
     import ExperienceVue from "../Component/Experience.vue"
     import ProjetVue from "../Component/Projet.vue"
     import DiplomeVue from "../Component/Diplome.vue"
+    import CompotenceVue from '../Component/Compotence.vue';
+    import QualiteVue from "../Component/Qualite.vue"
+    import FooterVue from "../Component/Footer.vue"
     const props = defineProps(['time'])
 </script>
 <template>
@@ -18,6 +21,15 @@
         </div>
         <div class="">
             <diplome-vue></diplome-vue>
+        </div>
+        <div class="">
+            <compotence-vue></compotence-vue>
+        </div>
+        <div class="">
+            <qualite-vue></qualite-vue>
+        </div>
+        <div class="">
+            <footer-vue></footer-vue>
         </div>
     </div>
 </template>

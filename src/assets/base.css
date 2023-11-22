@@ -196,7 +196,9 @@
 
 }
 @layer utilities{
-
+p{
+  font-size: 13px;
+}
 .simple{
     color: transparent;
     font-weight: 600;
@@ -273,6 +275,9 @@ link:hover {
 .b p{
     transform: translateX(45px);
     font-size: 22px;
+}
+.cache{
+  display: none;
 }
 .wrap{
     display: flex;

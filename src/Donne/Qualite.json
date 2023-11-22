@@ -1,5 +1,26 @@
 [
-    {"value":"Aise travailes en équipes"},
-    {"value":"Honnête, curieux, Créatif"},
-    {"value":"Dynamique, sérieux, ponctuel"}
+    {
+        "value": [
+            "Collaborer avec des personnes ayant des compétences complémentaires peut aider à résoudre les problèmes plus rapidement et à améliorer la qualité du travail.",
+            "Le partage des connaissances et des idées peut aider à stimuler la créativité et à améliorer la qualité du travail"
+        
+        ],
+        "titre": "Aise travailes en équipes"
+    },
+    {
+        "value": 
+        [
+            "Ma créative joue un rôle important et central dans dommaine du développement web.",
+            "Être à la fois technique et crétif me permet d'apporte une dimension unique à chaque projet."
+        ],
+        "titre": "Créatif"
+    },
+    {
+        "value": [
+            "Ma motivation constitué la coeur de mon engagement en tant que développeur Laravel et Vue js.",
+            "La programmation avec framoworks tels que Laravel et Vue js, c'est l'expression de ma passion. "
+        ],
+        "titre": "Motivé"
+    }
+   
 ]

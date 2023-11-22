@@ -1,5 +1,22 @@
 <script setup>
-import Projet from "../Donne/Projet.json"
+import { ref } from "vue";
+const play = ref(true);
+const ProjetList = ref(
+    [
+    { "image": "../../public/project/vue-monde.png", "titre": "LIST PAYS | UNIVERSITY | AIRPORT", "techo": "VUE JS", "link": "https://pays-monde-air.netlify.app/"
+    },
+    { "image": "../../public/project/diary.png", "titre": "DIARY AI", "techo": "VUE JS", "link": "https://aide-game-ai-response.netlify.app/"
+    },
+    { "image": "../../public/project/note.png", "titre":"NOTE BOOK", "techo": "VUE JS", "link": "https://note-frederic.netlify.app"
+    },
+    { "image": "../../public/project/inscrire.png", "titre": "REGISTRE FICHIER", "techo": "REACT JS", "link": "https://fichier-registre.netlify.app/"
+    },
+    { "image": "../../public/project/monde.png", "titre": "MONDE WITH FLAG", "techo": "REACT JS", "link": "https://react-world-flag.netlify.app"
+    },
+    { "image": "../../public/project/ecole.png", "titre": "GESTION ECOLE", "techo": "LARAVEL | INERTIA", "link": "https://github.com/Fredericra/inertia-scolaire-gestion"
+    }
+]
+)
 </script>
 <template>
     <div class="media">
@@ -8,26 +25,51 @@ import Projet from "../Donne/Projet.json"
             <div class=" px-5">
                 <p class="titre">Projet personel</p>
             </div>
+            <div class="mt-10 flex justify-center items-center space-x-5">
+                <button class="transition-all duration-1000" @click="()=>{play = !play}">
+                    <div class="btn1 duration-1000" v-if="play">Stop Carouselle</div>
+                    <div class="btn duration-1000" v-else>Play Carouselle</div>
+                </button>
+            </div>
         </div>
         <div class="col-span-4"></div>
     </div>
-    <el-carousel height="200px" direction="horizontal" type="card" autoplay>
-        <div class="" v-for="(value, index) in Projet" :key="index">
-            <a :href="value.link" class=" overflow-hidden">
+    <el-carousel height="200px" direction="horizontal" type="card" :autoplay="play">
+        <div class="" v-for="(value, index) in ProjetList" :key="index">
                 <div class="">
-                    <el-carousel-item class=" rounded-2xl shadow-lg" style="object-fit:cover ;background-size: 20%;" :style="`background: url(${value.image});`">
-                        <div class="relative">
-                            <div class="absolute top-4 left-2">
-                                <div class="text-indigo-950">
-                                    <p class="text-[18px] titre1">
-                                        {{ value.techo }}
-                                    </p>
+                    <el-carousel-item class=" rounded-2xl shadow-lg">
+                        <div class="common-layout">
+                            <el-container>
+                                <el-aside width="400px">
+                                <div class="px-2 py-4">
+                                    <div class="text-cener">
+                                        <p class="">
+                                            <span class="">
+                                                Framework
+                                            </span>
+                                            <span class="">
+                                                {{ value.techo }}
+                                            </span>
+                                        </p>
+                                        <p class="titre1">
+                                        {{ value.titre }}
+                                        </p>
+                                    </div>
+                                    <div class="flex justify-center items-end py-4">
+                                        <div class="flex space-x-2">
+                                            <a href="" class="btn">Source Code</a>
+                                            <a href="" class="btn1">Demo</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
+                                </el-aside>
+                                <el-main>
+                                    <el-image :src="value.image" :fit="cover" width="100%" height="100%" class="h-[220px] w-[220px] shadow-lg shadow-indigo-900 rounded-tl-[20px]"></el-image>
+                                </el-main>
+                            </el-container>
                         </div>
                     </el-carousel-item>
                 </div>
-            </a>
         </div>
     </el-carousel>
 </template>
