@@ -8,6 +8,8 @@ const menu = ref([
     { value: "+261 32 22 303 69", icon: "fas fa-map-marker-alt", title: "Telephone" },
     { value: "25 ans", icon: "fas fa-hand-holding-heart", title: "age" },
 ])
+
+
 function animation() {
     const nom = document.querySelector(".nome");
     setTimeout(() => {
@@ -15,7 +17,9 @@ function animation() {
     }, value.value + 4500);
 }
 onMounted(animation)
+
 </script>
+
 <template>
     <div class="relative mb-10 head">
         <div class="absolute">
@@ -85,15 +89,33 @@ onMounted(animation)
                                 <ul class="space-y-2 font-bold  text-violet-800">
                                     <li class="grid grid-cols-12" v-for="(value, index) in menu" :key="index">
                                         <div class="col-span-3">
-                                            <span class="text-sm underline underline-offset-2 flex">
-
-                                                <i :class="value.icon" class="px-4"></i>{{ value.title }} </span>
+                                            <span class="text-sm underline underline-offset-2 flex items-center">
+                                                <el-icon v-if="index===0"><LocationInformation /></el-icon>
+                                                <el-icon v-if="index===1"><Ship /></el-icon>
+                                                <el-icon v-if="index===2"><PhoneFilled /></el-icon>
+                                                <el-icon v-if="index===3"><Trophy /></el-icon>
+                                                {{ value.title }} </span>
                                         </div>
                                         <div class="col-span-9">
                                             <span class="ml-[105px]">{{ value.value }}</span>
                                         </div>
                                     </li>
                                 </ul>
+                            </div>
+                            <div class="py-5 mt-4">
+                                <div class="flex justify-center items-center">
+                                    <button @click="bas"  style="font-size: 20px" class=" -space-y-4 px-2 py-2 outline outline-2 outline-indigo-950 rounded-full hover:translate-y-2 hover:outline-blue-400 duration-1000">
+                                       <div class="i" style="--time:0.4;">
+                                            <el-icon><ArrowDownBold /></el-icon>
+                                       </div>
+                                       <div class="i" style="--time:0.8;">
+                                            <el-icon><ArrowDownBold /></el-icon>
+                                       </div>
+                                       <div class="i" style="--time:1.2;">
+                                            <el-icon><ArrowDownBold /></el-icon>
+                                       </div>
+                                    </button>
+                                </div>
                             </div>
                             </div>
                         </div>
@@ -231,7 +253,12 @@ onMounted(animation)
 </template>
 <script>
 export default {
-
+    methods: {
+        bas()
+        {
+            this.$emit('scroll-bas')
+        }
+    },
 }
 </script>
 <style scoped>
@@ -253,7 +280,11 @@ export default {
     background-position-x: -25%;
     background-position-y: 20%;
 }
-
+.nom{
+    font-weight: 900;
+    font-size: 28px;
+    color:transparent;
+}
 .head::before {
     content: "";
     position: absolute;
@@ -274,13 +305,14 @@ export default {
     }
 }
 
-.nom::before {
+#nom::before {
     content: attr(data-text);
     position: absolute;
     height: 100%;
     width: 0%;
     left: 0;
     top: 0;
+    font-weight: 900;
     overflow: hidden;
     color: var(--pink-950);
     animation: nom 2s forwards;
@@ -291,5 +323,24 @@ export default {
     100% {
         width: 100%;
     }
+    
 }
+.i{
+    opacity:0.2;
+    animation:fred 2s infinite linear;
+}
+@keyframes fred {
+    0%{
+        opacity: 0.2;
+    }
+    50%{
+        opacity: 1;
+        color:aqua;
+    }
+}
+.i:nth-child(n)
+{
+    animation-delay: calc(1s * var(--time)) ;
+}
+
 </style>

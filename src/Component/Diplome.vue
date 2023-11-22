@@ -3,7 +3,7 @@ import Diplone from "../Donne/Diplome.json"
 
 </script>
 <template>
-    <div class="">
+    <div class="py-10">
         <div class="media">
             <div class="col-span-4"></div>
             <div class="col-span-4">
@@ -31,7 +31,7 @@ import Diplone from "../Donne/Diplome.json"
                                     {{ value.ecole }}
                                 </p>
                                 <p class="liue items-center space-x-2">
-                                    <span class="fas fa-map-marker-alt"></span>
+                                    <el-icon><Position /></el-icon>
                                     <span class="">
                                         {{ value.lieu }}
                                     </span>

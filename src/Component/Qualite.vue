@@ -28,13 +28,15 @@ import Qualite from "../Donne/Qualite.json"
                                         </p>
                                     </div>
                                 </div>
-                                <div class="bg-gray-400 min-h-[190px] hover:bg-indigo-700 hover:shadow-lg hover:text-white shadow-indigo-900 duration-1000">
+                                <div class="relative bg-gray-400 h-[240px] hover:h-[260px] hover:bg-indigo-700 hover:shadow-lg hover:text-white shadow-indigo-900 duration-1000 hv">
                                     <div class="px-5 py-4 space-y-4">
                                         <p class=" indent-4 font-bold" v-for="(text,index) in value.value" :key="index">
                                             {{ text }}
                                         </p>
                                     </div>
+                                    <div class="absolute duration-1000 bottom-0 w-full bg-gray-900 h-0 hvr"></div>
                                 </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -43,3 +45,9 @@ import Qualite from "../Donne/Qualite.json"
         </div>
     </div>
 </template>
+<style scoped>
+.hv:hover .hvr{
+    height: 25px;
+}
+
+</style>

@@ -20,35 +20,45 @@ function commence()
                 inter()
             }, 3000);
 }
-onMounted(()=>window.addEventListener("load",commence))
-onUnmounted(()=>window.addEventListener("load",commence))
+onUnmounted(() => {
+  commence()
+})
+onMounted(() => {
+  commence()
+})
 </script>
 <template>
-    <div>
-        <h1 data-text="" id="text"></h1>
+    <div class="not">
         <div class="flex justify-center items-center h-[550px]">
             <div class="flex space-x-2 absolute top-[42%] left-[5%] w-full flex-wrap">
-                <h1 data-text="" id="text"></h1>
+                <h1 data-text="" id="text" class="font-bold"></h1>
+                
             </div>
         </div>
     </div>
 </template>
 
 <style scoped>
+
 .not {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
 }
 
+.text{
+    font-weight: 1000;
+    font-size:32px;
+    
 
+}
 .not::before {
     content: "";
     position: absolute;
     height: 100%;
     width: 100%;
-    background: #ec4899;
-    clip-path: circle(40% at 20% 20%);
+    background: var(--vt-c-divider-light-1);
+    clip-path: circle(20% at 60% 20%);
 }
 
 #text1 {
@@ -62,8 +72,8 @@ onUnmounted(()=>window.addEventListener("load",commence))
     position: absolute;
     height: 100%;
     width: 100%;
-    background: linear-gradient(to left, var(--blue-400) 40%, var(--orange-400) 60%);
-    clip-path: circle(20% at right 100%);
+    background:linear-gradient(to top, var(--blue451),var(--pink-950)) ;
+    clip-path: circle(20% at right 70%);
 }
 
 .circle:nth-child(1) {
@@ -106,7 +116,10 @@ onUnmounted(()=>window.addEventListener("load",commence))
     height: 100%;
     left: 0;
     top: 0;
+    font-size: 32px;
+    font-weight: 900;
     overflow: hidden;
+    filter: hue-rotate(0deg);
     color: var(--pink-950);
     border-bottom:2px solid var(--pink-950) ;
     animation: animate 3s infinite linear;
@@ -120,6 +133,7 @@ onUnmounted(()=>window.addEventListener("load",commence))
     }
 
     90% {
+    filter: hue-rotate(360deg);
         width: 100%;
         filter:hue-rotate(180deg);
         transform: translateX(0);

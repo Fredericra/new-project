@@ -7,11 +7,18 @@
     import QualiteVue from "../Component/Qualite.vue"
     import FooterVue from "../Component/Footer.vue"
     const props = defineProps(['time'])
+    function scrolly(){
+        const bodyHeigh = document.body.scrollHeight
+        window.scrollTo({
+            behavior:"smooth",
+            top:bodyHeigh
+        });
+    }
 </script>
 <template>
     <div class="space-y-4">
         <div class="">
-            <head-vue :value="time"></head-vue>
+            <head-vue :value="time" @scroll-bas="scrolly"></head-vue>
         </div>
         <div class="">
             <experience-vue></experience-vue>
