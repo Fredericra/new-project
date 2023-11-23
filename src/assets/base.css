@@ -266,11 +266,8 @@ link:hover {
     filter: drop-shadow(10px 10px 2px rgba(0,0,0,0.5));
 }
 
-@media screen and (max-width:420px) {
-  body{
-    margin: 12px;
-    padding: 12px;
-  }
+@media screen and (max-width:720px) {
+ 
 .b{
     text-align: center;
     font-size: 12px;
