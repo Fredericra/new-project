@@ -130,7 +130,12 @@ export default {
     color: var(--pink-950);
     animation: animate 3s infinite linear;
 }
+.text {
+    position: relative;
+    font-weight: 1000;
+    color: transparent;
 
+}
 @keyframes animate {
     0% {
         width: 0%;

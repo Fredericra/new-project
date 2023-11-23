@@ -61,7 +61,12 @@ export default {
     overflow-x: hidden;
 }
 
+.text {
+    position: relative;
+    font-weight: 1000;
+    color: transparent;
 
+}
 .not::before {
     content: "";
     position: absolute;

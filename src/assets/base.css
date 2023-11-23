@@ -41,7 +41,7 @@
     --bal: rgba(0, 0, 0, 0.5);
     --green-light: #6fb936;
     --blue: #2c7ad2;
-    --purple: #8d3dae;
+    --purple: #5b19775d;
     --red: #c82736;
     --orange: #8c14e7;
     --blue451: #4514e7;
@@ -266,7 +266,11 @@ link:hover {
     filter: drop-shadow(10px 10px 2px rgba(0,0,0,0.5));
 }
 
-@media screen and (max-width:720px) {
+@media screen and (max-width:420px) {
+  body{
+    margin: 12px;
+    padding: 12px;
+  }
 .b{
     text-align: center;
     font-size: 12px;
@@ -274,6 +278,14 @@ link:hover {
 .b p{
     transform: translateX(45px);
     font-size: 22px;
+}
+.line::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  height: 4%;
+  width: 100%;
+  border-left: 2px solid var(--pink-950);
 }
 .cache{
   display: none;

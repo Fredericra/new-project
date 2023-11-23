@@ -20,7 +20,7 @@ import Diplone from "../Donne/Diplome.json"
                 <div class="relative">
                     <div class="absolute w-4 h-10 bg-pink-950 -top-5 left-[50%] -translate-x-[6px] filter blur-[2px] rounded-t-full"></div>
                 </div>
-                <div class=" line">
+                <div class="overflow-hidden line">
                     <ul class="m-0 p-0">
                         <li v-for="(value, index) in Diplone" :key="index">
                             <div class="content px-4 space-y-2">
@@ -48,6 +48,7 @@ import Diplone from "../Donne/Diplome.json"
                                 </p>
                             </div>
                         </li>
+                        <div class=""  style="clear: both;"></div>
                     </ul>
                 </div>
             </div>
@@ -55,20 +56,20 @@ import Diplone from "../Donne/Diplome.json"
         </div>
     </div>
 </template>
+
 <style scoped>
 
 .line{
     padding: 0;
     margin: 0;
-    width: 100%;
-    height: 100%;
+   
    
 }
 .line::before{
     content: "";
     position: absolute;
     left: 50%;
-    height: 95%;
+    height: calc(100% / 10 - 10px );
     width: 100%;
     border-left: 2px solid var(--pink-950);
 }

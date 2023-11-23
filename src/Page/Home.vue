@@ -1,4 +1,5 @@
 <script setup>
+    import { ref } from "vue"
     import HeadVue from '../Component/Head.vue';
     import ExperienceVue from "../Component/Experience.vue"
     import ProjetVue from "../Component/Projet.vue"
@@ -7,6 +8,12 @@
     import QualiteVue from "../Component/Qualite.vue"
     import FooterVue from "../Component/Footer.vue"
     const props = defineProps(['time'])
+    const menu = ref([
+        "Expérience",
+        "Diplome",
+        "Compétence",
+        "Qualite Pérsonel"
+    ])
     function scrolly(){
         const bodyHeigh = document.body.scrollHeight
         window.scrollTo({
@@ -16,7 +23,14 @@
     }
 </script>
 <template>
-    <div class="space-y-4">
+    <div class="space-y-4 relative">
+        <div class="media">
+            <div class="col-span-3">
+               
+            </div>
+            <div class="col-span-6"></div>
+            <div class="col-span-3"></div>
+        </div>
         <div class="">
             <head-vue :value="time" @scroll-bas="scrolly"></head-vue>
         </div>
@@ -26,10 +40,10 @@
         <div class="px-10 py-10">
             <projet-vue></projet-vue>
         </div>
-        <div class="">
+        <div class=" overflow-hidden">
             <diplome-vue></diplome-vue>
         </div>
-        <div class="">
+        <div class=" overflow-hidden">
             <compotence-vue></compotence-vue>
         </div>
         <div class="">

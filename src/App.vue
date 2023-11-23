@@ -74,12 +74,13 @@ onMounted(() => {
 }
 @keyframes animation {
   0%{
-    transform: scaleY(0) scaleX(0) rotateZ(0deg);
+    transform: scaleY(0)  rotateZ(0deg);
   }
   50%{
-    transform: scaleY(10) scaleX(1) rotateZ(12deg);
+    transform: scaleY(20)  rotateZ(65deg);
     filter: hue-rotate(360deg);
   }
+ 
 }
 .anime:nth-child(n){
   animation-delay: calc(0.2s * var(--i));
