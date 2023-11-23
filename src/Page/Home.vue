@@ -24,13 +24,6 @@
 </script>
 <template>
     <div class="space-y-4 relative">
-        <div class="media">
-            <div class="col-span-3">
-               
-            </div>
-            <div class="col-span-6"></div>
-            <div class="col-span-3"></div>
-        </div>
         <div class="">
             <head-vue :value="time" @scroll-bas="scrolly"></head-vue>
         </div>
