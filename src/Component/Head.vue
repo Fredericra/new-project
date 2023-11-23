@@ -137,6 +137,7 @@ onMounted(animation)
                                 </path>
                             </svg>
                         </div>
+                       
 
                     </div>
                 </div>
@@ -277,9 +278,10 @@ export default {
     position: relative;
     background: url('../../public/svg/animate.svg');
     background-repeat: no-repeat;
-    background-position-x: -25%;
-    background-position-y: 20%;
+    background-position-x: -105%;
+    background-position-y: 40%;
 }
+
 .nom{
     font-weight: 900;
     font-size: 28px;

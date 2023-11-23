@@ -1,24 +1,11 @@
 <script setup>
 import { onMounted,onUnmounted,ref } from 'vue';
+const text = ref("hello")
 function commence()
 {
-    const text = document.querySelector("#text");
-            const menu = ["HTML","CSS","PHP", "JAVASCRIPT", "LARAVEL", "VUEJS"];
-            let i = -1
-            function inter() {
-                i++;
-                if (i < menu.length) {
-                    text.classList.add("text")
-                    text.dataset.text = menu[i];
-                    text.innerHTML = menu[i]
-                }
-                else {
-                    i = -1
-                }
-            }
-            const interval = setInterval(() => {
-                inter()
-            }, 3000);
+   const text = [
+    "Bonjour, je suis développeur "
+   ]
 }
 onUnmounted(() => {
   commence()
@@ -29,10 +16,13 @@ onMounted(() => {
 </script>
 <template>
     <div class="not">
-        <div class="flex justify-center items-center h-[550px]">
-            <div class="flex space-x-2 absolute top-[42%] left-[5%] w-full flex-wrap">
-                <h1 data-text="" id="text" class="font-bold"></h1>
-                
+        <div class="py-4 px-4">
+            <div class="flex justify-center h-[1000px]">
+                <div class="flex justify-center items-center">
+                    <p class="">
+                    
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -73,7 +63,7 @@ onMounted(() => {
     height: 100%;
     width: 100%;
     background:linear-gradient(to top, var(--blue451),var(--pink-950)) ;
-    clip-path: circle(20% at right 70%);
+    clip-path: circle(20% at left 70%);
 }
 
 .circle:nth-child(1) {
@@ -109,40 +99,5 @@ onMounted(() => {
 
 }
 
-.text::after {
-    content: attr(data-text);
-    position: absolute;
-    width: 0%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    font-size: 32px;
-    font-weight: 900;
-    overflow: hidden;
-    filter: hue-rotate(0deg);
-    color: var(--pink-950);
-    border-bottom:2px solid var(--pink-950) ;
-    animation: animate 3s infinite linear;
-}
 
-@keyframes animate {
-    0% {
-        width: 0%;
-        transform: translateX(2px);
-
-    }
-
-    90% {
-    filter: hue-rotate(360deg);
-        width: 100%;
-        filter:hue-rotate(180deg);
-        transform: translateX(0);
-
-
-    }
-
-}
-@media screen {
-    
-}
 </style>

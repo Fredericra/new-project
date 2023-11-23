@@ -69,7 +69,7 @@ onMounted(() => {
   width: 4px;
   border-radius: 20px;
   filter:hue-rotate(80deg);
-  animation: animation 1.6s infinite linear;
+  animation: animation 4s infinite linear;
 
 }
 @keyframes animation {
