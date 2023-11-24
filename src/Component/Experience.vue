@@ -15,7 +15,7 @@ import CardVue from './Card.vue'
                 </div>
                 <div class="card">
                     <div class="mt-10 mb-20 space-y-4 line">
-                        <card-vue v-for="(value, index) in Tous" :key="index" :card="value" :isa="index" class="px-5"></card-vue>
+                        <card-vue v-for="(value, index) in Tous" :key="index" :card="value" :isa="index" class="px-5" aos-data="fade-left" aos-duration="1000" aos-delay="200"></card-vue>
                     </div>
                 </div>
             </div>

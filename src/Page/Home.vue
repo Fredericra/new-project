@@ -77,9 +77,9 @@ import { startCase } from "lodash";
         <div class="" id="exper">
             <experience-vue></experience-vue>
         </div>
-        <div class="media fixed top-5 w-full cache">
+        <div class="media fixed top-5 w-full duration-1000 cache" :style="`transform:scaleY(${scal})`">
             <div class="col-span-3">
-                <div class="px-5 py-5 space-y-4 duration-500 " style="transform-origin: top left;" :style="`transform:scaleY(${scal})`">
+                <div class="px-5 py-5 space-y-4 duration-500 " style="transform-origin: top left;" >
                     <div class="py-2 transform duration-1000 rounded-lg text-center bg-indigo-500 shadow-lg shadow-indigo-950 cursor-pointer" v-for="(value,index) in menu" :key="index" :id="`${value.id}`">
                         <p class="font-bold text-white">
                         {{ value.value }}

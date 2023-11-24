@@ -1,4 +1,11 @@
-<script setup></script>
+<script setup>
+import { saveAs } from 'file-saver'
+function cv()
+{
+    const url = "../../public/frederic.pdf";
+    saveAs(url,"randriatsilavinafrederic.pdf");
+}
+</script>
 <template>
     <div>
         <div class="py-2 bg-gray-600">
@@ -19,7 +26,7 @@
                 </div>
                 <div class="col-span-4">
                     <div class="flex justify-end items-center px-5">
-                        <button class="btn duration-1000">
+                        <button class="btn duration-1000" @click="cv">
                             Télecharger cv
                         </button>
                     </div>
